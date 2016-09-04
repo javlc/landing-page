@@ -1,14 +1,14 @@
 - name: about
   title: "About"
-  url: \#site-slider
+  url: /#site-slider
 
 - name: services
   title: "Services"
-  url: \#site-services
+  url: /#site-services
 
 - name: contact
   title: "Contact Us"
-  url: \#site-contact
+  url: /#site-contact
 
 #- name: social
 #  title: "Social Icons"
