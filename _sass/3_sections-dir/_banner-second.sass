@@ -1,0 +1,30 @@
+section#site-static
+    max-width: $on-widescreen
+    width: 100%
+    height: auto
+    margin: 0 auto
+    .contenedor-img        
+        position: relative
+        color: #00BFA5
+        background: #691b9a /* Old Browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #691b9a 0%, #311b92 100%) /* FF3.6+ */
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #691b9a), color-stop(100%, #311b92)) /* Chrome, Safari4+ */
+        background: -webkit-radial-gradient(center, ellipse cover, #691b9a 0%, #311b92 100%) /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(center, ellipse cover, #691b9a 0%, #311b92 100%) /* Opera 11.10+ */
+        background: -ms-radial-gradient(center, ellipse cover, #691b9a 0%, #311b92 100%) /* IE 10+ */
+        background: radial-gradient(ellipse at center, #691b9a 0%, #311b92 100%) /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#691b9a', endColorstr='#311b92', GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+        
+        img
+            min-height: 250px
+            opacity: 0
+        p
+            font-family: $bold-font-family
+            position: absolute
+            top: 50%
+            text-align: center
+            transform: translateY(-50%)
+            padding: 7vw
+            text-transform: uppercase
+            +media-query(477px)
+                padding: 7vw 1vw

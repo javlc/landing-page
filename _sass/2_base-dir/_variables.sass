@@ -1,0 +1,37 @@
+// Our variables
+$base-font-family: "m-light", Helvetica, Arial, sans-serif
+$base-font-size: 16px
+$base-font-weight: 400
+$small-font-size: $base-font-size * 0.875
+$base-line-height: 1.5
+
+$bold-font-family: "m-semi_bold", Helvetica, Arial, sans-serif
+
+$spacing-unit: 30px
+$nav-text-color: #fff
+$text-color: #111111
+$background-color: #fdfdfd
+$brand-color: #2a7ae2
+
+$contact-area-bg: #f44336
+$social-area-bg: #455A64
+$social-area-bg-alt: #738791
+$site-services-bg: #4935A4
+$site-services-bg-alt: #311b92
+
+$grey-color: #828282
+$grey-color-light: lighten($grey-color, 40%)
+$grey-color-dark: darken($grey-color, 25%)
+
+//Mixins
+@mixin placeholder()
+    &::-webkit-input-placeholder
+        @content
+    &:-moz-placeholder
+        @content
+    &::-moz-placeholder
+        @content
+    &:-ms-input-placeholder
+        @content
+    &::-ms-input-placeholder
+        @content

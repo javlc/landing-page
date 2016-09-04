@@ -1,0 +1,60 @@
+#site-social
+    box-sizing: border-box
+    color: #fff
+    max-width: $on-widescreen
+    min-height: 347px
+    width: 100%
+    margin: 0 auto
+    position: relative
+    background: $social-area-bg /* Old Browsers */
+    background: -moz-radial-gradient(center, ellipse cover, $social-area-bg 0%, $social-area-bg-alt 50%, $social-area-bg 100%) /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $social-area-bg), color-stop(50%, $social-area-bg-alt), color-stop(100%, $social-area-bg)) /* Chrome, Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, $social-area-bg 0%, $social-area-bg-alt 50%, $social-area-bg 100%) /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, $social-area-bg 0%, $social-area-bg-alt 50%, $social-area-bg 100%) /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, $social-area-bg 0%, $social-area-bg-alt 50%, $social-area-bg 100%) /* IE 10+ */
+    background: radial-gradient(ellipse at center, $social-area-bg 0%, $social-area-bg-alt 50%, $social-area-bg 100%) /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$social-area-bg', endColorstr='$social-area-bg', GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+
+    .container
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -75%)
+        width: 50%        
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: stretch
+        margin: auto
+        text-align: center
+
+        +media-query(715px)
+            width: 75%
+        +media-query(482px)
+            width: 100%
+            transform: translate(-50%, -50%)
+        +media-query(366px)
+            width: 70%
+
+        a
+            display: inline-block
+            margin: 1em
+            transition: all .2s ease-in-out
+            &:hover
+                transform: scale(1.1)
+        span.icon
+            display: inline-block
+            background: none
+            padding: 0.5em            
+            border-radius: 50%
+            border: 2px solid #fff
+
+        .social-icons-wrap
+            width: 100%
+    svg
+        width: 32px
+        height: auto
+
+        path
+            fill: #fff
+

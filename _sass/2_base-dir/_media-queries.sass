@@ -1,0 +1,29 @@
+// Width of the content area
+$content-width: 960px
+$on-palm: 600px
+$on-laptop: 800px
+$on-widescreen: 1280px
+$text-limit : 1590px
+$xl-screen: 1800px
+
+// Use media queries like this:
+// scss:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+// sass:
+// +media-query($on-palm)
+//     .wrapper
+//         padding-right: $spacing-unit / 2
+//         padding-left: $spacing-unit / 2
+//         
+=media-query($device)
+    @media screen and (max-width: $device)
+        @content
+
+=media-slider-text($device1, $device2)
+    @media screen and (min-width: $device1) and (max-width: $device2)
+        @content

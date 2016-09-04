@@ -1,0 +1,15 @@
+- name: about
+  title: "About"
+  url: \#site-slider
+
+- name: services
+  title: "Services"
+  url: \#site-services
+
+- name: contact
+  title: "Contact Us"
+  url: \#site-contact
+
+#- name: social
+#  title: "Social Icons"
+#  url: /social/
