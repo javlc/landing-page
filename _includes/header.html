@@ -19,7 +19,7 @@
       <div class="trigger">
         {% for section in site.data.sections %}
           {% if section.title %}
-          <a class="page-link" href="{{ section.url | prepend: site.data.settings.baseurl }}">{{ section.title }}</a>
+          <a class="page-link" href="{{ section.url | prepend: site.baseurl }}">{{ section.title }}</a>
           {% endif %}
         {% endfor %}
         <div class="social-media-list flexed">
